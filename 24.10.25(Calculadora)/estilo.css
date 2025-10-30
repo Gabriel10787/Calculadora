@@ -1,0 +1,82 @@
+body{
+  background: linear-gradient(135deg, #041a42 0%, #54709f 50%, #449dd8 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.calculadora{
+  display:block;
+  margin: 20px auto;
+  padding:23px;
+  background: rgba(41, 128, 185, 0.9);
+  width:350px;
+  height:700px;
+  border-radius: 25px;
+  box-shadow: 0 8px 32px 0 rgba(90, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+}
+.calculadora td button{
+  display:block;
+  width:70px;
+  height: 70px;
+  font-size: 25px;
+}
+#creditos{
+  display:block;
+  padding-top:10px;
+  color:#fff;
+  text-align: center;
+  width:300px;
+  font-size: 20px;
+}
+#pantalla {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+#expresion {
+  min-height: 30px;
+  text-align: right;
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+#operandoA, #operacionDisplay, #operandob {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+#operandoA {
+  color: #333;
+}
+
+#operacionDisplay {
+  color: #2980b9;
+  font-weight: bold;
+}
+
+#operandob {
+  color: #333;
+}
+
+#resultado {
+  text-align: right;
+  font-size: 40px;
+  min-height: 50px;
+  padding: 5px;
+  color: #000;
+  word-wrap: break-word;
+  overflow-x: auto;
+}
+#curso{
+  display:block;
+  text-align: center;
+  color:#fff;
+  font-size: 20px;
+}
