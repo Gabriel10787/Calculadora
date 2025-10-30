@@ -1,0 +1,84 @@
+        :root{
+            --bg:#e6e6e6;
+            --panel:#2b2b2b;
+            --btn:#f2f2f2;
+            --op:#ff9f0a;
+            --accent:#d4d4d4;
+            a--display-bg:#1f1f1f;
+            --display-color:#fff;
+            --glass: rgba(255,255,255,0.06);
+        }
+        html,body{
+            height:100%;
+            margin:0;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            background:linear-gradient(180deg,var(--bg),#cfcfcf);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding:24px;
+        }
+        .calc {
+            width:360px;
+            border-radius:12px;
+            overflow:hidden;
+            box-shadow:0 10px 30px rgba(0,0,0,0.25);
+            background:linear-gradient(180deg,var(--panel),#151515);
+            color:#fff;
+        }
+        .screen {
+            padding:18px;
+            background:linear-gradient(180deg,var(--display-bg),#0f0f0f);
+            display:flex;
+            flex-direction:column;
+            gap:6px;
+        }
+        .memory-indicator{
+            font-size:12px;
+            color:var(--accent);
+            height:16px;
+        }
+        .expression {
+            font-size:14px;
+            color:var(--accent);
+            min-height:18px;
+            text-align:right;
+            word-break:break-all;
+        }
+        .result {
+            font-size:32px;
+            text-align:right;
+            color:var(--display-color);
+            font-weight:600;
+            min-height:38px;
+        }
+        .keys {
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:8px;
+            padding:14px;
+            background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+        }
+        button {
+            height:56px;
+            border-radius:8px;
+            border:0;
+            font-size:18px;
+            cursor:pointer;
+            box-shadow: 0 2px 0 rgba(0,0,0,0.2);
+            transition:transform .06s ease, box-shadow .06s ease;
+            user-select:none;
+        }
+        button:active{ transform:translateY(1px); box-shadow:none; }
+        .btn-fn { background:var(--accent); color:#111; }
+        .btn-op { background:var(--op); color:#111; font-weight:700; }
+        .btn-num { background:var(--btn); color:#111; }
+        .btn-wide { grid-column: span 2; }
+        .btn-secondary { background:linear-gradient(180deg,#3b3b3b,#2b2b2b); color:#fff; }
+        .btn-equal { grid-column: span 1; height:120px; align-self:stretch; border-radius:8px; }
+        @media (max-width:420px){
+            .calc{ width:320px; }
+            .result{ font-size:28px; }
+            button{ height:52px; font-size:16px; }
+        }
+   

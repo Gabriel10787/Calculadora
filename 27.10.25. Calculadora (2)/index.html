@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Calculadora</title>
+    <script type="text-script" src="formula.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <div class="calc" role="application" aria-label="Calculadora">
+        <div class="screen">
+            <div class="memory-indicator" id="mem"> </div>
+            <div class="expression" id="expr"></div>
+            <div class="result" id="display">0</div>
+        </div>
+
+        <div class="keys" role="group" aria-label="Teclado calculadora">
+            <button class="btn-fn" data-action="mc">MC</button>
+            <button class="btn-fn" data-action="mr">MR</button>
+            <button class="btn-fn" data-action="mplus">M+</button>
+            <button class="btn-fn" data-action="mminus">M-</button>
+
+            <button class="btn-secondary" data-action="clear-entry">CE</button>
+            <button class="btn-secondary" data-action="clear">C</button>
+            <button class="btn-secondary" data-action="back">⌫</button>
+            <button class="btn-op" data-action="op">÷</button>
+
+            <button class="btn-num" data-num="7">7</button>
+            <button class="btn-num" data-num="8">8</button>
+            <button class="btn-num" data-num="9">9</button>
+            <button class="btn-op" data-action="op">×</button>
+
+            <button class="btn-num" data-num="4">4</button>
+            <button class="btn-num" data-num="5">5</button>
+            <button class="btn-num" data-num="6">6</button>
+            <button class="btn-op" data-action="op">−</button>
+
+            <button class="btn-num" data-num="1">1</button>
+            <button class="btn-num" data-num="2">2</button>
+            <button class="btn-num" data-num="3">3</button>
+            <button class="btn-op" data-action="op">+</button>
+
+            <button class="btn-num btn-wide" data-num="0">0</button>
+            <button class="btn-num" data-action="decimal">.</button>
+            <button class="btn-equal btn-op" data-action="equal">=</button>
+        </div>
+    </div>
+        
+</body>
+</html>
